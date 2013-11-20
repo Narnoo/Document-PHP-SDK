@@ -4,9 +4,8 @@ class Request {
     
         var $app_key = "";
         var $secret_key = ""; // Secret Key From Portal
-	var $response_type = "json"; // xml / json / csv / html / php
 	var $requiredSSL = false;
-	var $endpoint = "localhost:8888/distributor/index.php/api";
+	var $endpoint;
 	
         public function setAuth($appkey, $secretkey) {
 		$this->app_key = $appkey;

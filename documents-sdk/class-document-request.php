@@ -3,8 +3,9 @@
 class DocumentRequest extends Request {
 	
     
-    public function __construct($appkey,$secretkey){
+    public function __construct($appkey,$secretkey,$endpoint){
         $this->setAuth($appkey, $secretkey);
+        $this->endpoint = $endpoint;
     }
 
         /**
