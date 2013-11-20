@@ -21,10 +21,10 @@ class DocumentRequest extends Request {
         /**
 	 * Get a collection of information
 	 *
-         * @param ARRAY Search Criteria Results
-         *              @param INTEGER $Departments Department Identifier
-         *              @param STRING $Category Document Category Names
-         *              @param STRING $Keywords Document Keyword Names 
+         * @param ARRAY Search Criteria parameters
+         *              @param INTEGER Departments Department Identifier
+         *              @param STRING Category Document Category Names
+         *              @param STRING Keywords Document Keyword Names 
 	 * @return array
 	 */
         public function getCollection($params,$page_no = 1) {
@@ -33,7 +33,7 @@ class DocumentRequest extends Request {
 		return $this->getResponse ( 'collection', $var );           
 	}
         /**
-	 * Get a company departments
+	 * Get all company department names
 	 *
 	 * @return array
 	 */
@@ -41,7 +41,11 @@ class DocumentRequest extends Request {
 		return $this->getResponse ( 'departments' );
            
 	}
-        
+        /**
+	 * Get all company category names
+	 *
+	 * @return array
+	 */
         public function getCategories() {
 		return $this->getResponse ( 'categories' );
            
