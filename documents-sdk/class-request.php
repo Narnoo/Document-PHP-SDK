@@ -1,6 +1,6 @@
 <?php
 
-class Request {
+class DmsRequest {
     
         var $app_key = "";
         var $secret_key = ""; // Secret Key From Portal

@@ -9,8 +9,6 @@ $endpoint = 'localhost:8888/distributor/index.php/api';
 
 // Document Request Setup
 $document = new DocumentRequest($appkey,$secretkey,$endpoint);
-
-
 $getDocuments = $document->getDocuments();
 print_r($getDocuments);
 ?>

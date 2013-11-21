@@ -1,13 +1,12 @@
 <?php
 
-class DocumentRequest extends Request {
+class DocumentRequest extends DmsRequest {
 	
     
-    public function __construct($appkey,$secretkey,$endpoint){
-        $this->setAuth($appkey, $secretkey);
-        $this->endpoint = $endpoint;
-    }
-
+        public function __construct($appkey,$secretkey,$endpoint){
+            $this->setAuth($appkey, $secretkey);
+            $this->endpoint = $endpoint;
+        }
         /**
 	 * get your all document information
 	 *
