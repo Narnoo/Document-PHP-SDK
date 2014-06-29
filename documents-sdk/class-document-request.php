@@ -40,6 +40,18 @@ class DocumentRequest extends DmsRequest {
 		return $this->getResponse ( 'departments' );
            
 	}
+        
+        /**
+	 * Get all company department names
+	 *
+	 * @return array
+	 */
+        public function getSingleDocument($id) {
+                $var = array('id'=>$id);
+		return $this->getResponse ( 'single_document' , $var);
+           
+	}
+        
         /**
 	 * Get all company category names
 	 *
